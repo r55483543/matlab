@@ -1,0 +1,9 @@
+i=imread('../../ARM/HPS/RGBaes.bmp');%?取你要看的?像
+image(i);
+R=i(:,:,1);%把RGB各?分量提出
+G=i(:,:,2);
+B=i(:,:,3);
+figure;%?出直方?
+subplot(1,3,1),imhist(R),title('RED');
+subplot(1,3,2),imhist(G),title('GREEN');
+subplot(1,3,3),imhist(B),title('BLUE');
